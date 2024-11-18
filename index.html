@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submarinista Profesional</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Barra de navegación */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Secciones */
+        section {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Sección "Trabajos Realizados" */
+        #work {
+            background-color: #e0e0e0;
+        }
+
+        /* Estilos de los cuadros en "Trabajos Realizados" */
+        .work-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .work-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 30%;
+            min-width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        /* Estilos de formulario de contacto */
+        #contact form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Sección de información */
+        #info .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .info-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            min-width: 250px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h3 {
+            font-size: 1.4em;
+            color: #333;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Redes sociales */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-media a:hover {
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Francisco el Submarinista</h1>
+        <nav>
+            <a href="#about">Sobre mí</a>
+            <a href="#work">Trabajos Realizados</a>
+            <a href="#services">Servicios</a>
+            <a href="#info">Información</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy un apasionado submarinista con años de experiencia explorando las profundidades del océano. Me encanta descubrir nuevas especies, maravillarme con la biodiversidad marina y compartir mis aventuras con quienes aman el mar tanto como yo.</p>
+    </section>
+
+    <!-- Sección "Trabajos Realizados" -->
+    <section id="work">
+        <h2>Trabajos Realizados</h2>
+        <div class="work-container">
+            <div class="work-box">
+                <h3>Expediciones</h3>
+                <p>He participado en expediciones científicas en el Caribe, donde he colaborado en investigaciones sobre corales y vida marina.</p>
+            </div>
+            <div class="work-box">
+                <h3>Documentales</h3>
+                <p>He trabajado como asesor y buzo profesional en documentales de naturaleza, ayudando a capturar impresionantes escenas bajo el agua.</p>
+            </div>
+            <div class="work-box">
+                <h3>Fotografía Submarina</h3>
+                <p>He capturado imágenes de ecosistemas marinos y especies raras, que han sido publicadas en revistas de naturaleza.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Servicios" -->
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Excursiones Submarinas Guiadas</h3>
+                <p>Explora el fondo marino con un guía experimentado que te llevará a los mejores puntos de buceo.</p>
+                <p class="price">Precio: $150 por persona</p>
+            </div>
+            <div class="service-box">
+                <h3>Fotografía Submarina Profesional</h3>
+                <p>Captura momentos únicos bajo el agua con nuestro equipo de fotografía profesional.</p>
+                <p class="price">Precio: $200 por sesión</p>
+            </div>
+            <div class="service-box">
+                <h3>Clases de Buceo</h3>
+                <p>Aprende las técnicas de buceo con instructores certificados para mejorar tu seguridad y habilidades en el agua.</p>
+                <p class="price">Precio: $300 por curso</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección "Información" -->
+    <section id="info">
+        <h2>Información</h2>
+        <div class="info-container">
+            <div class="info-box">
+                <h3>Datos Personales</h3>
+                <p>Nombre: Francisco Castillo Martín<br>Edad: 18 años<br>Ubicación: Granada, España</p>
+            </div>
+            <div class="info-box">
+                <h3>Certificaciones</h3>
+                <p>PADI Divemaster<br>SSI Advanced Diver<br>Certificación en primeros auxilios</p>
+            </div>
+            <div class="info-box">
+                <h3>Idiomas</h3>
+                <p>Español (nativo)<br>Inglés (avanzado)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contact">
+        <h2>Contáctame</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 Submarinista Aventurero. Todos los derechos reservados.</p>
+      
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">&#x1F30D;</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">&#x1F31E;</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">&#x1F4AC;</a>
+        </div>
+    </footer>
+
+</body>
+</html>
